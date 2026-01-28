@@ -7,11 +7,11 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-START_TEXT = """<b>👋 Hello! I am SilentXForward Bot.</b>
+START_TEXT = """<b>👋 Hello! I am Forward Bot.</b>
 
 I Can Forward Videos And Documents From Multiple Channels To Multiple Other Channels, Filtering Out Unwanted Content.
 
-<b>Maintained By:</b> <a href="https://t.me/SilentXBotz">SilentXBotz</a>
+<b>Maintained By:</b> <a href="https://t.me/S11457447tz">S11457447tz</a>
 """
 
 HELP_TEXT = """<b>ℹ️ Help Menu</b>
@@ -36,11 +36,11 @@ I Am An Auto-Forward Bot. I Forward Files From Source Channels To Target Channel
 <b>Channel:</b> @SilentXBotz
 """
 
-ABOUT_TEXT = """<b>🤖 About SilentXForward</b>
+ABOUT_TEXT = """<b>🤖 About XForward</b>
 
-<b>Name:</b> SilentXForward
+<b>Name:</b> XForward
 <b>Version:</b> 2.0
-<b>Channel:</b> <a href="https://t.me/SilentXBotz">SilentXBotz</a>
+<b>Channel:</b> <a href="https://t.me/S11457447tz">S11457447tz</a>
 <b>Repository:</b> <a href="https://github.com/NBBotz/Auto-Forward-Bot">GitHub</a>
 
 <b>Features:</b>
@@ -54,7 +54,7 @@ ABOUT_TEXT = """<b>🤖 About SilentXForward</b>
 BUTTONS = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton("📢 Channel", url="https://t.me/SilentXBotz"),
+            InlineKeyboardButton("📢 Channel", url="https://t.me/S11457447tz"),
             InlineKeyboardButton("🐱 GitHub", url="https://github.com/NBBotz/Auto-Forward-Bot")
         ]
     ]
@@ -104,7 +104,7 @@ async def set_channels(client, message: Message):
         await message.reply_text(
             "<b>❌ Usage:</b> <code>/set &lt;source_id&gt; &lt;target_id&gt;</code>\n\n"
             "<b>Examples:</b>\n"
-            "<code>/set -1001234567890 -1009876543210</code>",
+            "<code>/set -1001234567690 -1009876554210</code>",
             parse_mode=enums.ParseMode.HTML
         )
         return
@@ -170,7 +170,7 @@ async def remove_target_channel(client, message: Message):
         await message.reply_text(
             "<b>❌ Usage:</b> <code>/rem &lt;source_id&gt; &lt;target_id&gt;</code>\n\n"
             "<b>Examples:</b>\n"
-            "<code>/rem -1001234567890 -1009876543210</code>",
+            "<code>/rem -1001234567790 -1009876653210</code>",
             parse_mode=enums.ParseMode.HTML
         )
         return
@@ -224,7 +224,7 @@ async def remove_channel(client, message: Message):
         await message.reply_text(
             "<b>❌ Usage:</b> <code>/rem &lt;source_id&gt;</code>\n\n"
             "<b>Examples:</b>\n"
-            "<code>/rem -1001234567890</code>",
+            "<code>/rem -10012346777890</code>",
             parse_mode=enums.ParseMode.HTML
         )
         return
